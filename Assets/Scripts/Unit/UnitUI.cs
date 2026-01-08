@@ -92,7 +92,8 @@ public class UnitUI : MonoBehaviour
 			{
 				var iconGO = Instantiate(statusIconPrefab, statusIconPanel.transform);
 				var iconUI = iconGO.GetComponent<ConditionIconUI>();
-				iconUI.Setup(activeCondition.condition.conditionIcon, activeCondition.remainingDuration);
+				iconUI.Setup(activeCondition.condition.conditionIcon, activeCondition.remainingDuration,
+					activeCondition.condition.conditionName);
 				activeIcons.Add(activeCondition.condition, iconUI);
 			}
 		}
@@ -102,7 +103,8 @@ public class UnitUI : MonoBehaviour
 	{
 		coatingIcon.gameObject.SetActive(isActive);
 		if (unit.unitConditions.activeCoating)
-			coatingIcon.Setup(unit.unitConditions.activeCoating.coatingSprite, unit.unitConditions.coatingDuration);
+			coatingIcon.Setup(unit.unitConditions.activeCoating.coatingSprite, unit.unitConditions.coatingDuration,
+				unit.unitConditions.activeCoating.coatingName);
 	}
 
 	public void SetHighlight(bool isOn)

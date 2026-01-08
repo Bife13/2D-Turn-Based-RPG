@@ -31,11 +31,13 @@ public class UnitInventory : MonoBehaviour
 	public int HandleStatusPassiveItem(StatusType statusType)
 	{
 		int finalValue = 0;
+
 		foreach (EquippableItem item in equippedItems)
 		{
-			foreach (StatusStatModifier statModifier in item.baseStatBonuses)
+			foreach (var passiveStatModifier in item.baseStatBonuses)
 			{
-				if (statModifier.statusType == statusType)
+				if (passiveStatModifier is StatusStatModifier statModifier &&
+				    statModifier.statusType == statusType)
 				{
 					finalValue += statModifier.amount;
 				}

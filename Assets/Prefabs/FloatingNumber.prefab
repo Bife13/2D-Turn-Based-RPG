@@ -52,7 +52,7 @@ MonoBehaviour:
   text: {fileID: 8445287963128443319}
   distanceToTravel: 0.5
   travelDuration: 1
-  fadeDuration: 2
+  fadeDuration: 0.5
 --- !u!1 &3366098528555059667
 GameObject:
   m_ObjectHideFlags: 0

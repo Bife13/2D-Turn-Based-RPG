@@ -4,17 +4,23 @@ using UnityEngine.UI;
 
 public class ConditionIconUI : MonoBehaviour
 {
-    public Image iconImage;
-    public TextMeshProUGUI durationText;
-    
-    public void Setup(Sprite icon, int duration)
-    {
-        iconImage.sprite = icon;
-        UpdateDuration(duration);
-    }
+	public Image iconImage;
+	public TextMeshProUGUI durationText;
+	private string iconName;
 
-    public void UpdateDuration(int duration)
-    {
-        durationText.text = duration.ToString();
-    }
+	private TooltipHandler tooltipHandler;
+
+	public void Setup(Sprite icon, int duration, string newName)
+	{
+		tooltipHandler = gameObject.GetComponent<TooltipHandler>();
+		iconImage.sprite = icon;
+		iconName = newName;
+		UpdateDuration(duration);
+		tooltipHandler.SetToolTipString($"{iconName} for {duration} turns");
+	}
+
+	public void UpdateDuration(int duration)
+	{
+		durationText.text = duration.ToString();
+	}
 }

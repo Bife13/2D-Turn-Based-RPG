@@ -20,7 +20,8 @@ public class FloatingText : MonoBehaviour
 		text.text = message;
 		text.color = color;
 
-		transform.DOMoveY(transform.position.y + distanceToTravel, travelDuration).SetEase(Ease.OutQuad);
-		text.DOFade(0f, fadeDuration).OnComplete(() => Destroy(gameObject));
+		if (gameObject != null)
+			transform.DOMoveY(transform.position.y + distanceToTravel, travelDuration).SetEase(Ease.OutQuad)
+				.OnComplete(() => text.DOFade(0f, fadeDuration).OnComplete(() => Destroy(gameObject)));
 	}
 }

@@ -262,7 +262,7 @@ public class CombatUIManager : MonoBehaviour
 
 	public void AddLog(string newString)
 	{
-		combatLog.text += "◆ " + newString + "\n";
+		combatLog.text += "-" + newString + "\n";
 	}
 
 	private enum EnemyStatTextIndex
