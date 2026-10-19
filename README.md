@@ -2,7 +2,7 @@
 
 A data-driven, turn-based combat framework in Unity 6, built so new abilities, status effects and items are created as data in the editor instead of new code.
 
-![Combat](docs/Combat.gif)
+![Combat](Docs/Combat.gif)
 
 ## What's in it
 
@@ -17,7 +17,7 @@ A data-driven, turn-based combat framework in Unity 6, built so new abilities, s
 
 The part I'd point to first. These tools let a designer build content without touching code:
 
-<img src="docs/ItemCreator&Editor_short.gif" alt="Item Creator & Editor" width="250">
+<img src="Docs/ItemCreator&Editor_short.gif" alt="Item Creator & Editor" width="250">
 
 - **`ConditionEditor`**: custom inspector that finds every `ConditionEffect` subclass through reflection, so new effect types show up in the dropdown automatically.
 - **`AbilityEditor`**: custom inspector for building abilities from modules.
