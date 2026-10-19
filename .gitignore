@@ -70,3 +70,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Third-party UI pack (license unknown, not redistributed)
+/Assets/Sprites/asset/
+/Assets/Sprites/asset.meta
