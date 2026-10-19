@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/0c18387c-5a83-4f0e-9968-0c5d6fb255fc
+
 # 2D Turn-Based RPG
 
 A data-driven, turn-based combat framework in Unity 6, built so new abilities, status effects and items are created as data in the editor instead of new code.
@@ -27,6 +31,8 @@ The part I'd point to first. These tools let a designer build content without to
 ## Gameplay video
 
 <!-- On github.com: edit this file, delete this comment, and drag the MP4 here. GitHub uploads it and puts the link in for you. -->
+https://github.com/user-attachments/assets/cae2ab6d-c204-452d-b91e-1f278fa4e91f
+
 
 ## Code worth reading
 
